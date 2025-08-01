@@ -1,0 +1,9 @@
+streamlit
+beautifulsoup4
+requests
+pandas
+lxml
+openai
+playwright
+python-dotenv
+matplotlib
