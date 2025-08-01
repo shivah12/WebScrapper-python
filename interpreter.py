@@ -1,11 +1,7 @@
 import openai
-import os
-from dotenv import load_dotenv
+import streamlit as st
 
-load_dotenv()
-
-# Initialize OpenAI client with new API format
-client = openai.OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+client = openai.OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
 
 def interpret_prompt(prompt, url):
     try:
