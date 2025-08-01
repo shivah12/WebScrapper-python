@@ -1,7 +1,7 @@
 import openai
 import streamlit as st
 
-client = openai.OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
+client = openai.OpenAI(api_key=st.secrets["openai"]["OPENAI_API_KEY"])
 
 def interpret_prompt(prompt, url):
     try:
